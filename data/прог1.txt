@@ -1,0 +1,37 @@
+################
+D = []
+for i in range(5):
+    D.append(int(input()))
+print(D)
+for i in range(5):
+    D[i] = D[i] ** 2
+print(D)
+
+################
+A = []
+B = []
+for i in range(9):
+    A.append(int(input()))
+for i in range(9):
+    B.append(A[i] - 8 * i)
+print(B)
+################
+import random
+C = []
+summa = 0
+for i in range(12):
+    C.append(random.randrange(-3, 15, 1))
+for i in C:
+    if i < 0:
+        summa += i
+print(summa)
+################
+import random
+C = []
+n = 0
+for i in range(15):
+    C.append(random.randrange(55, 100, 1))
+for i in C:
+    if i > 70:
+        n += 1
+print(n)
